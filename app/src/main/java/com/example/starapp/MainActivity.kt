@@ -30,8 +30,7 @@ class MainActivity : AppCompatActivity() {
         webView.setImageUrl()
         smallButton.setOnClickListener {
             /**
-             * Important !!
-             *  It is only required for small button.
+             *  Alert is only running for small button.
              */
             StarSdk.addStarInterface(StarSizeType.S) {
                 if (it) showAlert()
