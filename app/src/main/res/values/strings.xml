@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">StarApp</string>
+    <string name="smallStar">Small Star</string>
+    <string name="bigStar">Big star</string>
+    <string name="starImageUrl">https://img.etimg.com/thumb/msid-72948091,width-650,imgsize-95069,resizemode-4,qualit.jpg</string>
+    <string name="starAlertDialogTitle">Star SDK</string>
+    <string name="starAlertDialogMessage">Sky is Full</string>
+</resources>
