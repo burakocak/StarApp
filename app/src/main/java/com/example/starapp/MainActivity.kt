@@ -13,9 +13,9 @@ import com.example.starsdk.StarSizeType
 class MainActivity : AppCompatActivity() {
 
 
-    private lateinit var webView:WebView
-    private lateinit var smallButton:Button
-    private lateinit var bigButton:Button
+    private lateinit var webView: WebView
+    private lateinit var smallButton: Button
+    private lateinit var bigButton: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,16 +29,14 @@ class MainActivity : AppCompatActivity() {
         bigButton = findViewById(R.id.bigStar)
         webView.setImageUrl()
         smallButton.setOnClickListener {
-            /**
-             * Important !!
-             *  It is only required for small button.
-             */
             StarSdk.addStarInterface(StarSizeType.S) {
                 if (it) showAlert()
             }
         }
         bigButton.setOnClickListener {
-            StarSdk.addStarInterface(StarSizeType.B) {}
+            StarSdk.addStarInterface(StarSizeType.B) {
+                if (it) showAlert()
+            }
         }
     }
 
